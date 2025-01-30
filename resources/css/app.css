@@ -1,0 +1,48 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+.student-card{
+    transition: all .3s;
+}
+.student-card:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 7px 3px #387c466e;
+}
+
+.footer{
+    background: linear-gradient(to right, #387c46 60%, #ddab44);
+}
+
+.add-student{
+    color: #fff !important;
+    background-color: #387c46 !important;
+}
+
+.add-student:hover{
+    background-color: #ddab44 !important;
+}
+
+.footer-subtext{
+    font-size: 16px !important;
+}
+
+.notification{
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.7);
+    height: fit-content;
+    padding: 15px 0;
+    bottom: -100px; /* Start off-screen */
+    right: 30px;
+    z-index: 1999;
+    border-radius: 10px;
+    opacity: 0; /* Hidden initially */
+    transform: translateY(100px); /* Translate initially */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth transitions */
+}
+.close-notification{
+    font-size: 1.2rem;
+    border: none;
+    background: transparent;
+    outline: none;
+}
